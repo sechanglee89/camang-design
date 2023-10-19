@@ -545,6 +545,7 @@ main {
     justify-self: start;
 	position: fixed;
     bottom: 10rem;
+	left: 36px;
 }
 
 .left-icon-wrap svg {
