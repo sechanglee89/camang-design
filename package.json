@@ -5,11 +5,11 @@
   "description": "",
   "scripts": {
     "start": "parcel src/index.html --open",
-    "clean": "rmdir /s /q dist",
+    "clean": "del /s /f /q dist",
     "build:parcel": "parcel build src/index.html --no-content-hash --no-source-maps --public-url ./",
     "build": "npm run clean && npm run build:parcel",
     "deploy": "gh-pages -d dist",
-    "predeploy": "npm run build"
+    "predeploy": "npm run build && copy CNAME dist\\"
   },
   "repository": {
     "type": "git",
